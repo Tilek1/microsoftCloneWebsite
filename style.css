@@ -1,0 +1,264 @@
+@font-face {
+	font-family: 'Segoe';
+	src: url('fonts/9404.ttf') format("truetype"),
+	url('/fonts/10395.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	max-width: 1100px;
+	font-family: 'Segoe';
+	margin : 0 auto;
+}
+
+.nav-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	align-items: center;
+}
+
+
+.nav-left {
+	width: 48%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-left-ul,.nav-right-ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+.logo {
+	width: 110px;
+}
+
+.nav-left-ul li,.nav-right-ul li {
+	margin: 0 10px;
+}
+.nav-left-ul li a,
+.nav-right-ul li a  {
+	text-decoration: none;
+	color: #212121;
+	font-size: 14px;
+	padding-bottom: 5px;
+	
+}
+
+.nav-left-ul li a:hover,
+.nav-right-ul li a:hover  {
+	border-bottom: 3px solid #212121;
+}
+
+
+.nav-right-ul {
+	display: flex;
+}
+
+
+.header {
+	text-align: center;
+	background: url('img/slide1.png') no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: 5px;
+}
+
+.header-title {
+	padding-top: 220px;
+	font-size: 25px;
+	margin-bottom: 14px;
+	font-weight: 700;
+}
+
+.header-subtitle {
+	margin-bottom: 30px;
+}
+
+.shop-btn {
+	display: block;
+	padding: 14px 25px;
+	font-size: 16px;
+	margin: 0 auto 50px;
+	background-color: #212121;
+	border: none;
+	color: #fff;
+}
+.shop-btn:hover {
+	opacity: .85;
+	cursor: pointer;
+}
+
+.card {
+	margin-bottom: 35px;
+}
+
+.card-inner {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card-item {
+	width: 23%;
+	overflow: hidden;
+}
+.card-item img {
+	width: 100%;
+}
+
+.card-title {
+	font-size: 19px;
+	margin: 10px 0;
+}
+
+.card-subtitle {
+	margin-bottom: 15px;
+}
+.card-btn {
+	text-decoration: none;
+	font-size: 18px;
+	width: 100px;
+	text-transform: uppercase;
+	
+	color: #0067b8;
+}
+
+.card-btn:hover .chevron {
+	margin-left: 20px;
+}
+
+.game-pass-wrap {
+	background: url('img/xbox.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 0;
+}
+
+.game-pass-inner {
+	width: 50%;
+	padding: 50px 20px;
+}
+
+.game-pass-title {
+	margin-bottom: 15px;
+}
+
+.game-pass-btn {
+	margin: 20px 0 0;
+}
+
+.community-wrap {
+	background: url('img/carbon.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+}
+
+.community-btn {
+	color: #212121;
+	background-color: #fff;
+	font-weight: bold;
+	
+}
+
+.social {
+	padding: 25px 0;
+}
+
+.social-inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 25%;
+}
+.social-inner a {
+	color: crimson;
+	font-size: 35px;
+}
+
+.social-inner a:hover {
+	color: #000;
+}
+
+.footer {
+	padding: 45px 15px;
+	color: #616161;
+	background-color: #f2f2f2;
+}
+.footer-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+	flex-wrap: wrap;
+	margin-bottom: 45px;
+}
+
+.footer-top-item {
+	width: 15%;
+	font-size: 16px;
+}
+.footer-top-item h1 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+.footer-top-item p {
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.footer-bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-bottom h1 {
+	font-size: 14px;
+	font-weight: 400;	
+}
+.footer-bottom h1:first-child {
+	font-size: 16px;
+	vertical-align: middle;
+}
+.footer-bottom h1 span {
+	padding-top: 5px;
+	font-size: 25px;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.card-item {
+		width: 48%;
+	}
+	.footer-top-item {
+		width: 46%;
+	}
+	.footer-bottom h1 {
+		width: 46%;
+		margin-bottom: 10px;
+	}
+}
